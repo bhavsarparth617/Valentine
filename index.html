@@ -31,7 +31,8 @@ img{width:250px;border-radius:12px;margin-top:20px;}
 <h1>Ved ❤️</h1>
 <h2>Will you be my Valentine? 💌</h2>
 <button class="yes" onclick="showLove()">Yes 💖</button>
-<button class="no" onclick="moveNo()">No 😜</button>
+<!-- <button class="no" onclick="moveNo()">No 😜</button> -->
+<button class="no" id="noBtn">No 😜</button>
 </div>
 
 <div id="second">
@@ -51,6 +52,16 @@ function showLove(){
   document.getElementById("first").style.display="none";
   document.getElementById("second").style.display="block";
 }
+
+const noBtn = document.getElementById("noBtn");
+noBtn.addEventListener("mouseover", function(){
+  const x = Math.floor(Math.random() * (window.innerWidth - 100));
+  const y = Math.floor(Math.random() * (window.innerWidth - 50));
+
+  noBtn.style.position = "absolute";
+  noBtn.style.right = x + "px";
+  noBtn.style.top = y + "px";
+});
 function moveNo(){
   alert("No option allowed 😜 Only YES ❤️");
 }
