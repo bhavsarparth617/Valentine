@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Ved ❤️</title>
+<style>
+body{
+  font-family: Arial;
+  text-align:center;
+  background:#ffe6f0;
+  padding-top:80px;
+}
+button{
+  padding:12px 25px;
+  margin:10px;
+  font-size:18px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+.yes{background:#ff4d6d;color:white;}
+.no{background:#ccc;}
+#second{display:none;}
+img{width:250px;border-radius:12px;margin-top:20px;}
+</style>
+</head>
+
+<body>
+
+<div id="first">
+<h1>Ved ❤️</h1>
+<h2>Will you be my Valentine? 💌</h2>
+<button class="yes" onclick="showLove()">Yes 💖</button>
+<button class="no" onclick="moveNo()">No 😜</button>
+</div>
+
+<div id="second">
+<h1>I Love You Ved ❤️</h1>
+
+<!-- CHANGE IMAGE LINK BELOW -->
+<img src="C:\Users\kapil\OneDrive\Desktop\sakshiVed\SV2.jpeg">
+
+<p style="font-size:20px;margin-top:20px;">
+No matter how far you are, my heart is always with you ❤️<br>
+Valentine today, Forever mine — Ved 💖
+</p>
+</div>
+
+<script>
+function showLove(){
+  document.getElementById("first").style.display="none";
+  document.getElementById("second").style.display="block";
+}
+function moveNo(){
+  alert("No option allowed 😜 Only YES ❤️");
+}
+</script>
+
+</body>
+</html>
